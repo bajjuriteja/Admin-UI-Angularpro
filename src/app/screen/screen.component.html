@@ -1,0 +1,34 @@
+
+<div class="container">
+    <h2>Screen Details</h2>
+    <form >
+      <div class="form-group">
+        <label for="screenid">Screen Id:</label>
+        <input type="number" class="form-control" id="screenid" placeholder="Screen Id" name="screenid" [(ngModel)]="s.screenid">
+      </div>
+
+
+      <div class="form-group">
+        <label for="sname">ScreenName:</label>
+        <input type="text" class="form-control" id="sname" placeholder="Screen Name" name="sname" [(ngModel)]="s.sname">
+      </div>
+      
+      <div class="form-group">
+        <label for="r">Rows:</label>
+        <input type="text" class="form-control" id="r" placeholder="Enter Rows" name="r" [(ngModel)]="s.r">
+      </div>
+      
+      <div class="form-group">
+        <label for="c">Columns:</label>
+        <input type="text" class="form-control" id="c" placeholder="Enter Columns" name="c" [(ngModel)]="s.c">
+
+      </div>
+      
+      <div class="form-group">
+        <label for="theaterid">Enter TheaterId</label>
+        <input type="number" class="form-control" id="theaterid" placeholder="TheaterId" name="theaterid" [(ngModel)]="theater_theaterid">
+      </div>
+      
+      <button type="submit" class="btn btn-default" (click)="addscreen()">Submit</button>
+    </form>
+  </div>

@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>Movie Details</h2>
+    <form >
+      <div class="form-group">
+        <label for="mid">Movie Id:</label>
+        <input type="number" class="form-control" id="mid" placeholder="Movie Id" name="mid" [(ngModel)]="m.mid">
+      </div>
+
+
+      <div class="form-group">
+        <label for="mname">MovieName:</label>
+        <input type="text" class="form-control" id="mname" placeholder="Movie Name" name="mname" [(ngModel)]="m.mname">
+      </div>
+      
+      <div class="form-group">
+        <label for="mgenre">MovieGenre:</label>
+        <input type="text" class="form-control" id="mgenre" placeholder="Movie Genre" name="mgenre" [(ngModel)]="m.mgenre">
+      </div>
+      
+      <div class="form-group">
+        <label for="mlen">Movie Length:</label>
+        <input type="number" class="form-control" id="mlen" placeholder="Movie Length" name="mlen" [(ngModel)]="m.mlen">
+
+      </div>
+      
+      <div class="form-group">
+        <label for="mdirect">Movie Director</label>
+        <input type="text" class="form-control" id="mdirect" placeholder="MovieDirector" name="mdirect" [(ngModel)]="m.mdirect">
+      </div>
+      
+      
+      <div class="form-group">
+        <label for="mrdat">Movie ReleaseDate</label>
+        <input type="number" class="form-control" id="mrdat" placeholder="MovieReleaseDate" name="mrdat" [(ngModel)]="m.mrdat">
+      </div>
+
+
+      <button type="submit" class="btn btn-default" (click)="addmovie()">Submit</button>
+    </form>
+  </div>

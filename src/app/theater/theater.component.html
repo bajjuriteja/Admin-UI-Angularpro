@@ -1,0 +1,34 @@
+
+<div class="container">
+    <h2>Theater Details</h2>
+    <form >
+      <div class="form-group">
+        <label for="theaterId">TheaterId:</label>
+        <input type="number" class="form-control" id="theaterId" placeholder="Theater Id" name="theaterId" [(ngModel)]="t.theaterid">
+      </div>
+
+
+      <div class="form-group">
+        <label for="thname">TheaterName:</label>
+        <input type="text" class="form-control" id="thname" placeholder="Theater Name" name="thname" [(ngModel)]="t.thname">
+      </div>
+      
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" class="form-control" id="city" placeholder="Enter City" name="city" [(ngModel)]="t.city">
+      </div>
+      
+      <div class="form-group">
+        <label for="mnname">ManagerName:</label>
+        <input type="text" class="form-control" id="mnname" placeholder="Manager Name" name="mnname" [(ngModel)]="t.manname">
+      </div>
+      
+      <div class="form-group">
+        <label for="mnContact">ManagerContact:</label>
+        <input type="text" class="form-control" id="mnContact" placeholder="Manger Contact" name="mnContact" [(ngModel)]="t.manContact">
+      </div>
+      
+      <button type="submit" class="btn btn-default" (click)="add()">Submit</button>
+    </form>
+  </div>
+  
