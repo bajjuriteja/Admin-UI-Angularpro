@@ -4,13 +4,13 @@
     <form >
       <div class="form-group">
         <label for="theaterId">TheaterId:</label>
-        <input type="number" class="form-control" id="theaterId" placeholder="Theater Id" name="theaterId" [(ngModel)]="t.theaterid">
+        <input type="number" class="form-control" id="theaterId" placeholder="Theater Id" name="theaterId" [(ngModel)]="t.theaterid" required/>
       </div>
 
 
       <div class="form-group">
         <label for="thname">TheaterName:</label>
-        <input type="text" class="form-control" id="thname" placeholder="Theater Name" name="thname" [(ngModel)]="t.thname">
+        <input type="text" class="form-control" id="thname" placeholder="Theater Name" name="thname" [(ngModel)]="t.thname" >
       </div>
       
       <div class="form-group">
@@ -28,7 +28,10 @@
         <input type="text" class="form-control" id="mnContact" placeholder="Manger Contact" name="mnContact" [(ngModel)]="t.manContact">
       </div>
       
-      <button type="submit" class="btn btn-default" (click)="add()">Submit</button>
+      <button type="submit" class="btn btn-success" (click)="add()">Submit</button>
     </form>
   </div>
-  
+
+  <div>
+  <h2>{{message}}</h2>
+</div>

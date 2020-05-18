@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/http'
 })
 export class TheaterComponent implements OnInit {
 
-  
+  message:string="";
 
   t:Theater=new Theater();
 
@@ -24,7 +24,7 @@ export class TheaterComponent implements OnInit {
   }
   add()
   {
-    this.http.post("http://localhost:8009/addTheater",this.t).subscribe((response)=>{console.log(response)});
+    this.http.post("http://localhost:8090/addTheater",this.t,{responseType:"text"}).subscribe((re)=>{this.message=re;console.log(re);});
 
   }
 
